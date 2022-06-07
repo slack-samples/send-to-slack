@@ -1,0 +1,25 @@
+{
+    "display_information": {
+        "name": "SendToSlack"
+    },
+    "oauth_config": {
+        "redirect_urls": [
+            "https://send2slack.ngrok.io/slack/oauth_redirect"
+        ],
+        "scopes": {
+            "user": [
+                "channels:read",
+                "chat:write",
+                "groups:read",
+                "im:read",
+                "mpim:read",
+                "users:read"
+            ]
+        }
+    },
+    "settings": {
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
