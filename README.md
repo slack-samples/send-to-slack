@@ -22,6 +22,12 @@ Before you can run the app, you'll need to store some environment variables.
 4. If using an Auth0, go to your Auth0 application's settings and copy the domain, Client ID, and Client Secret values and paste them into the ISSUER_BASE_URL, CLIENT_ID, and SECRET fields in your .env file.
 5. Set BASE_URL to https://<site>.ngrok.io if using ngrok [see guide below](#oauth) or to the public endpoint of your choice where your app will be running.
 
+#### Update Installation URL
+1. Replace the workspace name in the installation url in the app.js files with your development workspace.
+```
+https://workplace-name.slack.com/... -> https://your-workspace.slack.com/...
+```
+
 #### Install Dependencies
 ```
 git clone https://github.com/slack-samples/send-to-slack.git
@@ -49,7 +55,7 @@ npm start
 
 `app.js` is the entry point for the application and is the file you'll run to start the server. It includes all oAuth redirect URLs as well as endpoints to fetch user data and send messages on behalf of the authenticated user
 
-You'll need to run `npm run-script build` in order to serve the React client code from your server and allow it to interact with the authenticated endpoints without running into CORS issues
+You'll need to run `npm run build` from the client folder in order to serve the React client code from your server and allow it to interact with the authenticated endpoints without running into CORS issues
 
 ## OAuth
 
