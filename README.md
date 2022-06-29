@@ -20,18 +20,24 @@ Before you can run the app, you'll need to store some environment variables.
 2. Open your newly created app's configuration page from [this list](https://api.slack.com/apps), click Basic Information from the left hand menu, and copy the values for the SLACK_CLIENT_ID, SLACK_CLIENT_SECRET, SLACK_SIGNING_SECRET into your .env file.
 3. Follow the steps in the App-Level Tokens section of your app config to create an app-level token with the connections:write scope. Give it whatever name you like and copy the token into your .env as SLACK_APP_TOKEN.
 4. If using an Auth0, go to your Auth0 application's settings and copy the domain, Client ID, and Client Secret values and paste them into the ISSUER_BASE_URL, CLIENT_ID, and SECRET fields in your .env file.
+5. Set BASE_URL to https://<site>.ngrok.io if using ngrok [see guide below](#oauth) or to the public endpoint of your choice where your app will be running.
 
 #### Install Dependencies
-`git clone https://github.com/slack-samples/send-to-slack.git`
-`cd send-to-slack`
-`npm install`
+```
+git clone https://github.com/slack-samples/send-to-slack.git
+cd send-to-slack
+npm install
+```
 
 #### Build your client side app
-`cd client`
-`npm run build`
-
+```
+cd client
+npm run build
+```
 #### Run Bolt Server from the Send to Slack Sample home directory
-`npm start`
+```
+npm start
+```
 
 ## Project Structure
 
