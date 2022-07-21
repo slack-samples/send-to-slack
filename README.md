@@ -23,9 +23,9 @@ Before you can run the app, you'll need to store some environment variables.
 5. Set BASE_URL to https://<site>.ngrok.io if using ngrok [see guide below](#oauth) or to the public endpoint of your choice where your app will be running.
 
 #### Update Installation URL
-1. Replace the workspace name in the installation url in the app.js files with your development workspace.
+1. Replace the workspace name in the installation url in the app.js and App.js files with your development workspace and client id.
 ```
-https://workplace-name.slack.com/... -> https://your-workspace.slack.com/...
+https://workplace-name.slack.com/oauth?client_id=47445629121.2929214697316... -> https://your-workspace.slack.com/oauth?client_id=<your client id>...
 ```
 
 #### Install Dependencies
