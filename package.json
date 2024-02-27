@@ -1,7 +1,7 @@
 {
   "name": "send-to-slack",
   "version": "1.0.0",
-  "description": "A scaffold template for Slack apps",
+  "description": "A simple Send to Slack integration for your website",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
