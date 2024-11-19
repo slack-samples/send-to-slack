@@ -1,3 +1,7 @@
+### ⚠️ This sample has been archived and is no longer maintained.
+
+---
+
 # Send To Slack Sample App
 
 This is an example of how to include a Send to Slack integration on your website.
